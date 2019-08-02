@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    tools:context=".MainFragment">
+
+
+    <fragment
+        android:id="@+id/some_select_frg"
+        android:name="com.vitali.fragmentactivityforesultmvp.SelectSomeDataFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fragmentEnterTransition="@android:anim/fade_in"
+        android:fragmentExitTransition="@android:anim/fade_out"/>
+
+    <LinearLayout
+        android:id="@+id/main_frg_result_container_lil"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true"/>
+
+    <fragment
+        android:id="@+id/blank_frg"
+        android:name="com.vitali.fragmentactivityforesultmvp.BlankFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fragmentEnterTransition="@android:anim/fade_in"
+        android:fragmentExitTransition="@android:anim/fade_out"
+        />
+</LinearLayout>
