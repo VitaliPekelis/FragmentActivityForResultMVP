@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFD600"
     tools:context=".SelectSomeDataFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,5 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Start Activity For Result" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Select Some Data Fragment" />
 
 </FrameLayout>
